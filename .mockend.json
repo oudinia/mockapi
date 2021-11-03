@@ -1,1 +1,13 @@
-
+[
+  {
+    'repeat(100)': {
+      user_id: '',
+      name: ' ',
+      email(tags) {
+        return `${this.name}@example${tags.domainZone()}`
+          .toLowerCase().replace(' ', '.');
+      },
+      birthdate: ''
+    }
+  }
+]
